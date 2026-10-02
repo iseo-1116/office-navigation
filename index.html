@@ -10,9 +10,41 @@
 
     <h1>🏢 사무실 길찾기</h1>
 
-    <p>원하는 장소를 선택하세요.</p>
+    <p>출발지와 목적지를 선택해주세요.</p>
 
-    <button>길찾기</button>
+    <div>
+        <label>출발지</label>
+        <br>
+
+        <select id="start">
+            <option value="">출발지를 선택하세요</option>
+            <option value="로비">1층 로비</option>
+            <option value="회의실1">회의실 1</option>
+            <option value="회의실2">회의실 2</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div>
+        <label>도착지</label>
+        <br>
+
+        <select id="destination">
+            <option value="">도착지를 선택하세요</option>
+            <option value="로비">1층 로비</option>
+            <option value="회의실1">회의실 1</option>
+            <option value="회의실2">회의실 2</option>
+        </select>
+    </div>
+
+    <br>
+
+    <button onclick="findRoute()">🧭 길찾기</button>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
